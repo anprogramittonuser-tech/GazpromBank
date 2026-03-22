@@ -1,0 +1,110 @@
+.custom-radio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 276px;
+    min-height: 116px;
+    border: 2px solid rgba(226, 228, 232, 1);
+    border-radius: 20px;
+    padding: 12px 16px;
+    outline: none;
+}
+
+.custom-radio:hover {
+     border: 2px solid rgba(37, 157, 214, 1);
+}
+
+.custom-radio--order {
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    width: unset;
+    min-height: unset;
+    border: none;
+    padding: 0;
+}
+
+.custom-radio--order:hover {
+    border: none;
+}
+
+.custom-radio--order .custom-radio__label {
+    padding: 0 0 0 36px;
+    display: flex;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.custom-radio--order .custom-radio__label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(37, 157, 214, 1);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.custom-radio--order .custom-radio__icon {
+    left: 6px;
+    top: 6px;
+}
+
+
+.custom-radio__label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: rgba(52, 48, 51, 1);
+    user-select: none;
+    cursor: pointer;
+}
+
+.custom-radio__label::before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(37, 157, 214, 1);
+    border-radius: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-radio__label:hover::before {
+    border: 2px solid rgba(24, 131, 182, 1);
+}
+
+.custom-radio__field:checked + .custom-radio__label::before,
+ .custom-radio__field:checked ~ .custom-radio__icon {
+    background-color: rgba(37, 157, 214, 1);
+    display: block;
+}
+
+
+.custom-radio__price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: rgba(52, 48, 51, 1);
+}
+
+.custom-radio__coment-bold {
+    font-weight: 700;
+}
+
+
+.custom-radio__icon {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    display: none;
+    pointer-events: none;
+}

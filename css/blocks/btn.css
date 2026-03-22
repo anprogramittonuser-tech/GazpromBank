@@ -1,0 +1,78 @@
+.btn {
+    width: 131px;
+    padding: 12px;
+    background-color: rgba(35, 157, 214, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 115%;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.btn:disabled {
+    background-color: rgba(240, 240, 240, 1);
+    color: rgba(133, 131, 133, 1);
+}
+
+.form__wrapper--column:has(.custom-checkbox__field:checked) .btn:disabled  {
+    background-color: rgba(35, 157, 214, 1);
+    color: rgba(255, 255, 255, 1); 
+    cursor: pointer; 
+}
+
+.form__wrapper--column:has(.custom-checkbox__field:checked) .btn:disabled:hover  {
+   background-color: rgba(157, 24, 129, 1); 
+   color: rgba(255, 255, 255, 1);
+}
+
+.form__wrapper--column:has(.custom-checkbox__field:checked) .btn:disabled:focus-visible  {
+   background-color: rgba(119, 16, 97, 1);
+}
+
+.btn--sim {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(to right, #13AED7, #537CCB);
+    color: #ffffff;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -2%;
+}
+
+
+.btn--sim:hover {
+    background:rgba(83, 124, 203, 1);
+}
+
+.btn--sim:focus-visible {
+    background:rgba(83, 124, 203, 1);
+}
+
+.btn--second {
+    background: linear-gradient(to right, #9548BD, #547CCB);
+}
+
+.btn--second:hover {
+    background: rgba(149, 72, 189, 1);
+}
+
+.btn--second:focus-visible {
+    background: rgba(149, 72, 189, 1);
+}
+
+.btn--three {
+     background: linear-gradient(to right, #D812AE, #9548BD);
+}
+
+.btn--three:hover {
+    background: rgba(216, 18, 174, 1);
+}
+
+.btn--three:focus-visible {
+    background: rgba(216, 18, 174, 1);
+}

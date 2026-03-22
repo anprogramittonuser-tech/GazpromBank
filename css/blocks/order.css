@@ -1,0 +1,124 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 120px;
+}
+
+.order__window-title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 120%;
+    color: #343033;
+    margin: 0 0 40px;
+    text-align: center;
+    user-select: none;
+}
+
+.order__window {
+    width: 940px;
+}
+
+.order__field {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    min-height: 500px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 24px 0px #2023341A;
+    border-radius: 20px;
+    margin: 0 auto 28px;
+}
+
+.order__field-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 36px;
+    list-style-type: none;
+    border-bottom: 2px solid rgba(240, 240, 240, 1);
+    padding: 0 0 36px;
+}
+
+.order__field-list::before {
+    /* content: "";
+    ;
+    position: absolute;
+    width: 86px;
+    height: 2px;
+    background-color: rgba(240, 240, 240, 1);
+    left: 17%;
+    top: 26%; */
+}
+
+.order__field-list::after {
+    /* content: "";
+    ;
+    position: absolute;
+    width: 86px;
+    height: 2px;
+    background-color: rgba(240, 240, 240, 1);
+    right: 12%;
+    top: 26%; */
+}
+
+.order__field-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.order__field-item:hover {
+     transform: translateY(-4px);
+} 
+
+.order__field-item::before {
+    /* content: "";
+    position: absolute;
+    width: 86px;
+    height: 2px;
+    background-color: rgba(240, 240, 240, 1);
+    right: 42%;
+    top: 26%;     */
+}
+
+.order__field-subsequence {
+    width: 70px;
+    background-color: rgba(35, 157, 214, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 115%;
+    padding: 4px;
+    border-radius: 60px;
+    text-align: center;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.order__field-logistics {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 115%;
+    display: block;
+    margin: 0 auto;
+    color: rgba(52, 48, 51, 1);
+    user-select: none;
+}
+
+
+.order__window-confident {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: rgba(133, 131, 133, 1);
+}
+
+.order__window-confident-link {
+    color: rgba(35, 157, 214, 1);
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.tariff {
+    margin: 40px 0 100px;
+}
+
+
+.tariff__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -2%;
+    text-transform: uppercase;
+    color: rgba(52, 48, 51, 1);
+    user-select: none;
+}
+
+.tariff__title-blue {
+    margin: 0;
+    color: rgba(37, 157, 214, 1);
+}
+
+.tariff__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    padding: 0;
+    gap: 16px;
+    user-select: none;
+}
+
+.tariff__item {
+    /* transform: translateY(0);
+    transition: transform 0.3s ease; */
+}
+
+.tariff__item :hover {
+    /* transform: translateY(-4px); */
+}
+
+
+@media (max-width: 767px) {
+    .tariff__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

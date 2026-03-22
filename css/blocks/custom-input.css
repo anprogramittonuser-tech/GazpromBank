@@ -1,0 +1,66 @@
+.custom-input {
+    position: relative;
+}
+
+.custom-input--inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.custom-input--inner .custom-input__label {
+    top: -5px;
+}
+
+.custom-input__field {
+    width: 400px;
+    height: 40px;
+    border: 1px solid rgba(240, 240, 240, 1);
+    border-radius: 8px;
+    padding: 12px 20px;
+    outline: none;
+}
+
+.custom-input__field:disabled {
+     background: rgba(251, 226, 224, 1);
+}
+
+.custom-input:has(.custom-input__field:valid) + .custom-input .custom-input__field:disabled,
+.custom-input:has(.custom-input__field:valid) + .custom-input .custom-input__error  {
+     background: none;
+
+}
+
+.custom-input:has(.custom-input__field:valid) + .custom-input .custom-input__error  {
+     display: none;
+}
+
+
+.custom-input__field:focus-visible {
+    border: 1px solid rgba(141, 214, 248, 1);
+}
+
+.custom-input__field:hover {
+    border: 1px solid rgba(191, 191, 191, 1);
+}
+
+
+.custom-input__label {
+    position: absolute;
+    left: 0;
+    top: -28px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
+    color: rgba(133, 131, 133, 1);
+    user-select: none;
+}
+
+
+.custom-input__error {
+    color: rgba(215, 37, 34, 1);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 115%;
+    display: none;
+}
